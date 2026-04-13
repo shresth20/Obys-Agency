@@ -107,7 +107,7 @@ function loaderScreen() {
   var tl = gsap.timeline();
 
   tl.to(".loader", {
-    delay: 4,
+    // delay: 4,
     yPercent: -100,
     duration: 1.1,
     ease: "power4.inOut",
