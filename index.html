@@ -17,15 +17,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
 
     <!-- sheryjs -->
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 
+    <!-- remixicon css -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://obys.agency/wp-content/themes/obys/images/favicon/favicon-16x16.png">
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- lettering js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+        integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Textillate js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+        integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -56,9 +74,9 @@
 
 
 
-    <div id="main" data-scroll-container>
+    <div id="main" class="main" data-scroll-container>
 
-        <div class="screen screen1" id="scr1">
+        <div class="screen screen1" id="scr1" data-scroll-section data-scroll>
             <header class="navbar">
                 <div class="navbar_inner">
                     <button class="nav-item navbar_menu" type="button" aria-label="Open menu">
@@ -124,50 +142,144 @@
             </header>
 
             <div class="section-1">
-                <div class="line">
-                    <!-- <span class="count">O1</span> -->
+                <div class="line line1">
                     <h1 class="txt">WE DESIGN</h1>
                 </div>
-                <div class="line">
+                <div class="line line2">
                     <h1 class="txt">UNIQUE</h1>
 
                 </div>
-                <div class="line">
+                <div class="line line3">
                     <h1 class="txt line3-txt"><span>WEB</span><span></span>/<span>GRAPHIC</span></h1>
-
                 </div>
-                <div class="line">
+                <div class="line line4">
                     <h1 class="txt">EXPERIENCE</h1>
-
                 </div>
+                <img class="sec-1-flag" src="assets\ukrn-flag.jpg">
+
             </div>
 
         </div>
 
 
-
-        <div class="screen screen2" id="scr2">
+        <div class="screen screen2" id="scr2" data-scroll-section data-scroll>
             <div class="section-2">
 
-                <div class="sec-2-video-wrap">
+                <div class="sec-2-video-wrap" data-scroll data-scroll-speed="-1" data-scroll-position="top">
                     <div class="crsr-video"><i class="ri-play-fill"></i></div>
 
-                    <img
-                        src="https://images.unsplash.com/photo-1499428665502-503f6c608263?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <!-- <img src="https://images.unsplash.com/photo-1555432384-3b2fa7b650c9?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> -->
-                    <video class="sec-2-video" autoplay loop muted playsinline preload="auto">
-                        <source src="assets\Obys-Showreel-2024.mp4" type="video/mp4">
+                    <!-- <img class="video-img" src="https://images.unsplash.com/photo-1499428665502-503f6c608263?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> -->
+                    <img class="video-img"
+                        src="https://images.unsplash.com/photo-1555432384-3b2fa7b650c9?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <!-- <img class="video-img" src="https://images.unsplash.com/photo-1690747945295-94a2769b3ce8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"> -->
+                    <video class="sec-2-video" loop src="assets/Obys-Showreel-2024.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
 
-        <div class="screen screen3" id="scr3">
+        <div class="screen screen3" id="scr3" data-scroll-section data-scroll>
             <div class="section-3">
+                <div class="header">
+                    <div class="sec-3-heading">
+                        <h1>OUR PROJECTS</h1>
+                    </div>
+                    <div class="underline"></div>
+                </div>
+                <div id="image-div-container">
+
+                    <div class="image-card card1">
+                        <div class="image-heading">HEADING</div>
+                        <div class="image-div">
+                            <img src="./assets/img1-1.jpg" alt="">
+                            <img src="./assets/img1-2.jpg" alt="">
+                        </div>
+                        <div class="image-footer">FOOTER</div>
+                    </div>
+
+                    <div class="image-card card2">
+                        <div class="image-heading">HEADING</div>
+                        <div class="image-div">
+                            <img src="./assets/img2-1.jpg" alt="">
+                            <img src="./assets/img2-2.jpg" alt="">
+                        </div>
+                        <div class="image-footer">FOOTER</div>
+                    </div>
+
+                    <div class="page3-circle1">
+                        <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+                            <path
+                                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <div class="circle-in">
+                            <p>We are thrilled to have you on board. We hove you enjoyed the projects ❤</p>
+                        </div>
+                    </div>
+
+                    <div class="page3-circle2">
+                        <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+                            <path
+                                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <div class="circle-in">
+                            <p>We are thrilled to have you on board. We hove you enjoyed the projects</p>
+                        </div>
+                    </div>
+
+                    <div class="image-card card3">
+                        <div class="image-heading">HEADING</div>
+                        <div class="image-div">
+                            <img src="./assets/img3-1.jpg" alt="">
+                            <img src="./assets/img3-2.jpg" alt="">
+                        </div>
+                        <div class="image-footer">FOOTER</div>
+                    </div>
+
+                    <div class="image-card card4">
+                        <div class="image-heading">HEADING</div>
+                        <div class="image-div">
+                            <img src="./assets/img4-1.jpg" alt="">
+                            <img src="./assets/img4-2.jpg" alt="">
+                        </div>
+                        <div class="image-footer">FOOTER</div>
+                    </div>
+                    <div class="image-card card1">
+                        <div class="image-heading"></div>
+                        <div class="image-div">
+                            <img src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?q=80&w=696&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <img src="https://images.unsplash.com/photo-1571873520882-d95552536b3b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="image-footer">FOOTER</div>
+                    </div>
+                    <div class="page3-circle2">
+                        <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
+                            <path
+                                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <div class="circle-in">
+                            <p>We are thrilled to have you on board. We hove you enjoyed the projects ❤</p>
+                        </div>
+                    </div>
+                    <div class="image-card card6">
+                        <div class="image-heading">HEADING</div>
+                        <div class="image-div">
+                            <img src="https://images.unsplash.com/photo-1664272090130-6531e619f880?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <img src="https://images.unsplash.com/photo-1623162905251-e98a25a45a67?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="image-footer">FOOTER</div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="screen screen4" id="scr4">
+        <div class="screen screen4" id="scr4" data-scroll-section data-scroll>
             <div class="section-4">
                 <div class="line line1">
                     <h1>ABOUT OBYS</h1>
@@ -227,31 +339,72 @@
             </div>
         </div>
 
-        <div class="screen screen5" id="scr5">
+        <div class="screen screen5" id="scr5" data-scroll-section data-scroll>
             <div class="section-5">
-                <div class="line">
-                    <h1>sdfghj</h1>
+
+                <div class="line line-left">
+                    <h1>Technology - <span>Sport</span> - Fashion - </h1>
+                    <h1>Technology - <span>Sport</span> - Fashion - </h1>
                 </div>
-                <div class="underline"></div>
-                <div class="line">
-                    <p>Our agency is about people who<br>
-                        love creating, designing and<br>
-                        developing wow projects. In the<br>
-                        same time we are a boutique<br>
-                        agency that is more than the<br>
-                        collective. We learn and grow, win<br>
-                        and celebrate together.
-                    </p>
+                <div class="line line-right">
+                    <h1>Architecture - <span>Beauty</span> - Real Estate - </h1>
+                    <h1>Architecture - <span>Beauty</span> - Real Estate - </h1>
+                </div>
+                <div class="line line-left">
+                    <h1>Pratners - <span>Science</span> - Travel - </h1>
+                    <h1>Pratners - <span>Science</span> - Travel - </h1>
+                </div>
+                <div class="line line-right">
+                    <h1>Music - <span>Hotels</span> - Automative - </h1>
+                    <h1>Music - <span>Hotels</span> - Automative - </h1>
                 </div>
             </div>
         </div>
 
-        <div class="screen screen6" id="scr6">
+        <div class="screen screen6" id="scr6" data-scroll-section data-scroll>
             <div class="section-6">
+                <div class="line sec-6-hero">
+                    <h1 class="sec-6-heading">LET'S CREATE</h1>
+                    <img src="assets/arrow.png" alt="" aria-hidden="true">
+                </div>
 
+                <div class="underline"></div>
+
+                <div class="sec-6-grid">
+                    <div class="line sec-6-col">
+                        <p class="sec-6-label">Socials</p>
+                        <div class="sec-6-links">
+                            <a href="https://dribbble.com/" target="_blank" rel="noreferrer">Dribbble</a>
+                            <a href="https://www.behance.net/" target="_blank" rel="noreferrer">Behance</a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+                            <a href="https://x.com/" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">Youtube</a>
+                        </div>
+                    </div>
+
+                    <div class="line sec-6-col">
+                        <p class="sec-6-label">Address</p>
+                        <address class="sec-6-copy">
+                            Pushkinska 5<br>
+                            61057 Kharkiv<br>
+                            Ukraine
+                        </address>
+                    </div>
+
+                    <div class="line sec-6-col">
+                        <p class="sec-6-label">Say Hi!</p>
+                        <a class="sec-6-mail" href="mailto:info@obys.agency">info@obys.agency</a>
+                    </div>
+                </div>
+
+                <div class="underline"></div>
+
+                <div class="sec-6-footer">
+                    <p>Obys Agency &copy; 2023</p>
+                </div>
             </div>
         </div>
-
     </div>
 
     <script src="script.js"></script>
